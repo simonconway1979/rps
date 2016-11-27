@@ -1,6 +1,18 @@
 source "https://rubygems.org"
 
-gem "sinatra"
-gem "rspec-sinatra"
-gem "capybara"
-gem "rspec"
+ruby '2.2.3'
+
+  gem 'sinatra'
+  gem 'rake'
+  gem 'rspec-sinatra'
+  gem 'shotgun'
+  gem 'selenium-webdriver'
+
+group :test do
+  gem 'rspec'
+  gem 'rubocop-rspec'
+  gem 'rubocop'
+  gem 'coveralls', require: false
+  gem 'capybara'
+  gem 'byebug'
+end
